@@ -1,0 +1,20 @@
+
+<h1><%= @cocktail.name %></h1>
+
+<ul>
+    <% @cocktail.doses.each do |dose| %>
+        <li>
+            <%= dose.ingredient.name%>--<%= dose.amount %>ml
+        </li>
+            <h3><%= dose.description %></h3>
+       
+    <% end %>
+</ul>
+
+<%= simple_form_for([@cocktail, @dose]) do |f| %>
+  <%= f.input :ingredient_id, collection: Ingredient.all %>
+  <%= f.input :amount %>
+  <%= f.select :volume, %w(cl dl l )%>
+  <%= f.submit %>
+
+<% end %>

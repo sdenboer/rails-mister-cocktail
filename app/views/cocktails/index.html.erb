@@ -1,0 +1,16 @@
+
+
+    <h1>Cocktails</h1>
+<div class="cards-container">  
+<%= select_tag 'ingredient', options_for_select(Ingredient.all.collect{ |x| x.name })  %>
+
+    <div class="grid">
+        <% @cocktails.each do |a| %>
+        <div class="element">
+            <h3 class="header"><%= link_to a.name, cocktail_path(a) %></h3>     
+        </div>
+        <% end %>
+    </div>
+</div>
+
+<%= link_to "create a cocktail!", new_cocktail_path %>

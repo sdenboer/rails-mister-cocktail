@@ -1,0 +1,111 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ @import 'components/index';
+
+ h1 {
+    font-family: Raleway;
+    text-align: center; 
+    font-size: 40px; 
+}
+
+.container {
+    margin-right: 350px;
+    margin-left: 350px; 
+    .header {
+        font-family: Raleway;
+        font-size: 30px;
+        a {
+            text-decoration: none;
+            color: #635C51;
+        }
+        a:hover {
+            text-decoration: none;
+            color: #1C1C1C;
+        }
+    }
+    .content {
+        font-family: Raleway;
+        font-size: 15px;
+        margin-top: -10px;
+    }
+    
+}
+
+.content_field{
+    height: 500px;
+    width: 70vw;
+}
+
+.title_field {
+    width: 500px;
+    text-align: center
+}
+
+form {
+    text-align: center;
+    
+}
+
+html {
+    position: relative;
+
+    height: 100%;
+}
+ body {
+    background-color: #B0A990;
+    margin: 0px 0px 0px 0px; 
+}
+
+.navbar {
+    background-color: #1C1C1C;
+    position: relative;
+    height: 40px;
+    display: flex;
+    align-items:center;
+    margin: 0;
+
+
+}
+
+.navbar a {
+    text-decoration: none;
+    font-family: Raleway;
+    color: white;
+}
+
+.navbar a:first-child {
+    position: absolute;
+    left: 10px;
+}
+
+.navbar a:last-child {
+    position: absolute;
+    right: 10px;
+}
+
+.footer {
+    background-color: #50858B;
+    height: 50px;
+    text-align: center;
+    font-family: Raleway;
+    color: white;
+    line-height: 50px;
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    
+}

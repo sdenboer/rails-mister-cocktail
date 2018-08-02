@@ -1,0 +1,24 @@
+// Place all the styles related to the cocktails controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import 'components/index';
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 50% 25% 25%; 
+}
+
+.element {
+    grid-auto-flow: column;
+    background-image: url("https://loremflickr.com/320/240");
+    height: 240px;
+    width: 200px;
+}
+
+
+.cards-container {
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
